@@ -5,7 +5,7 @@
              x:Class="SadApp.LoginPage" BackgroundColor="#FFFFFF">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-            <Image Source="{StaticResource Logo}" />
+            <Image />
             <BoxView HeightRequest="10"/>
             <StackLayout Orientation="Vertical" Spacing="20">
                 <Label TextColor="Black" FontAttributes="Bold" FontSize="Large" Text="Zaloguj się na swoje konto"/>

@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SadApp.App">
     <Application.Resources>
-        <ImageSource x:Key="Logo" ></ImageSource>
         <Color x:Key="Prim">#42a5f5</Color>
         <Color x:Key="PrimL">#80d6ff</Color>
         <Color x:Key="PrimD">#0077c2</Color>
