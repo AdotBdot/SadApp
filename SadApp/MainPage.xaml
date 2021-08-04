@@ -2,7 +2,8 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.MainPage">
+             x:Class="SadApp.MainPage"
+             BackgroundColor="#1f1f1f">
 
     <StackLayout><!-- wywal tego frame'a -->
         <Frame BackgroundColor="#1F1F1F" Padding="24" CornerRadius="0">

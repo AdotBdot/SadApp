@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SadApp.LoginPage" BackgroundColor="#FFFFFF">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <Image Source="{StaticResource Logo}" />
+            <BoxView HeightRequest="10"/>
+            <StackLayout Orientation="Vertical" Spacing="20">
+                <Label TextColor="Black" FontAttributes="Bold" FontSize="Large" Text="Zaloguj się na swoje konto"/>
+                <Frame HasShadow="true" CornerRadius="7" Padding="7">
+                    <Entry x:Name="Login" BackgroundColor="White" Text="{Binding Login}" Placeholder="Login"
+                           PlaceholderColor="DarkGray" HeightRequest="40" TextColor="Black"/>
+                </Frame>
+                <Frame HasShadow="true" CornerRadius="7" Padding="7">
+                    <Entry x:Name="Password" BackgroundColor="White" Text="{Binding Password}" Placeholder="Hasło"
+                           PlaceholderColor="DarkGray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
+                </Frame>
+                <Button Command="{Binding SubmitCommand}" Text="Zaloguj" TextColor="White" FontAttributes="Bold"
+                        FontSize="Large" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimD}"
+                        CornerRadius="7"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
