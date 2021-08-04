@@ -5,10 +5,10 @@
              x:Class="SadApp.LoginPage" BackgroundColor="#FFFFFF">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-            <Image />
-            <BoxView HeightRequest="10"/>
+            <Image Source="https://i.imgur.com/UT015Jf.png" WidthRequest="150" HeightRequest="150" Margin="0,30,0,0"/>
+            <BoxView HeightRequest="0"/>
             <StackLayout Orientation="Vertical" Spacing="20">
-                <Label TextColor="Black" FontAttributes="Bold" FontSize="Large" Text="Zaloguj się na swoje konto"/>
+                <Label TextColor="Black" FontAttributes="Bold" FontSize="Title" Text="Zaloguj się na swoje konto"/>
                 <Frame HasShadow="true" CornerRadius="7" Padding="7">
                     <Entry x:Name="Login" BackgroundColor="White" Text="{Binding Login}" Placeholder="Login"
                            PlaceholderColor="DarkGray" HeightRequest="40" TextColor="Black"/>
@@ -17,9 +17,10 @@
                     <Entry x:Name="Password" BackgroundColor="White" Text="{Binding Password}" Placeholder="Hasło"
                            PlaceholderColor="DarkGray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
                 </Frame>
-                <Button Command="{Binding SubmitCommand}" Text="Zaloguj" TextColor="White" FontAttributes="Bold"
-                        FontSize="Large" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimD}"
-                        CornerRadius="7"/>
+                <Frame HasShadow="true" CornerRadius="7" Padding="0">
+                    <Button Clicked="LoginBtn_OnClick" Text="Zaloguj" TextColor="White" FontAttributes="Bold"
+                            FontSize="Large" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimD}"/>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
