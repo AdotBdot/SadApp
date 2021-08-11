@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SadApp.FormsPage"
-             Title="Forms" IconImageSource="image.png">
+             Title="Formy" IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7">
+            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7" HasShadow="True">
                 <StackLayout>
                     <Label Text="Formy" TextColor="#FFFFFF" FontSize="Title"/>
                     <Label Text="Some Text" TextColor="#FFFFFF"/>

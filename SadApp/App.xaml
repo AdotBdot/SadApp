@@ -3,11 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SadApp.App">
     <Application.Resources>
-        <Color x:Key="Prim">#42a5f5</Color>
-        <Color x:Key="PrimL">#80d6ff</Color>
-        <Color x:Key="PrimD">#0077c2</Color>
-        <Color x:Key="Sec">#fbc02d</Color>
-        <Color x:Key="SecL">#fff263</Color>
-        <Color x:Key="SecD">#c49000</Color>
+        <Color x:Key="Prim">#0045f5</Color>
+        <Color x:Key="Sec">#E3A302</Color>
     </Application.Resources>
 </Application>

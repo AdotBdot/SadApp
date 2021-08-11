@@ -1,21 +1,25 @@
 ﻿<?xml version="1.0"
       encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.AboutPage" Title="Settings" IconImageSource="image.png">
+             x:Class="SadApp.AboutPage" Title="Ustawienia" IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="{StaticResource Prim}"  CornerRadius="13" Margin="17,17,17,7">
-                <StackLayout>
-                    <Label Text="Settings" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="{StaticResource Prim}"  CornerRadius="13" Margin="17,7,17,7">
-                <StackLayout>
-                    <Label Text="About" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
+            <StackLayout Margin="17,17,17,7">
+                <Label Text="Ustawienia" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
+                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="0,7,0,0" HasShadow="True">
+                    <StackLayout>
+                        <Label Text="Some Text" TextColor="#FFFFFF"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="17,17,17,7">
+                <Label Text="Informacje" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
+                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="0,7,0,0" HasShadow="True">
+                    <StackLayout>
+                        <Label Text="Some Text" TextColor="#FFFFFF"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
