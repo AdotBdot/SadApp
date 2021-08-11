@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace SadApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : TabbedPage
+    public partial class FormsPage : ContentPage
     {
-        public MainPage()
+        public FormsPage()
         {
             InitializeComponent();
         }

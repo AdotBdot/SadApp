@@ -133,4 +133,7 @@
       <Name>SadApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image.png" />
+  </ItemGroup>
 </Project>
