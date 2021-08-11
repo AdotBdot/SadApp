@@ -11,5 +11,4 @@
     <sadApp:HomePage/>
     <sadApp:SchedulePage/>
     <sadApp:FormsPage/>
-
 </TabbedPage>

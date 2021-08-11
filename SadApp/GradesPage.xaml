@@ -1,13 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.GradesPage"
-             Title="Grades" IconImageSource="image.png">
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SadApp.GradesPage" Title="Grades" IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7">
+                <StackLayout>
+                    <Label Text="Lekcja 1" TextColor="#FFFFFF" FontSize="Title"/>
+                    <Label Text="forma1: 69/2137" TextColor="#FFFFFF"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7">
+                <StackLayout>
+                    <Label Text="Lekcja 2" TextColor="#FFFFFF" FontSize="Title"/>
+                    <Label Text="forma1: 69/2137" TextColor="#FFFFFF"/>
+                    <Label Text="forma2: 69/2137" TextColor="#FFFFFF"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

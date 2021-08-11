@@ -5,9 +5,12 @@
              Title="Schedule" IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17">
+                <StackLayout>
+                    <Label Text="Dzisiejszy plan" TextColor="#FFFFFF" FontSize="Title"/>
+                    <Label Text="Some Text" TextColor="#FFFFFF"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
