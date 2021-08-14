@@ -1,19 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.SchedulePage"
-             Title="Plan Zajęć" IconImageSource="image.png">
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.SchedulePage" Title="Plan Zajęć"
+             IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7" HasShadow="True">
-                <StackLayout>
-                    <Label Text="Dzisiejszy plan" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
+            <StackLayout Margin="17">
+                <Label Text="Dzisiejszy plan" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
+                <sadApp:LessonFrame Lesson="Lekcja 1" Teacher="Nauczyciel 1" Classroom="Sala 1"/>
+                <sadApp:LessonFrame Lesson="Lekcja 2" Teacher="Nauczyciel 2" Classroom="Sala 2"/>
+                <sadApp:LessonFrame Lesson="Lekcja 3" Teacher="Nauczyciel 3" Classroom="Sala 3"/>
+                <sadApp:LessonFrame Lesson="Lekcja 4" Teacher="Nauczyciel 4" Classroom="Sala 4"/>
+                <sadApp:LessonFrame Lesson="Lekcja 5" Teacher="Nauczyciel 5" Classroom="Sala 5"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

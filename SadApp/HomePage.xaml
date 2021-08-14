@@ -1,40 +1,21 @@
 ﻿<?xml version="1.0"
       encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.HomePage" Title="Główna" IconImageSource="home.png">
+             xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.HomePage" Title="Główna"
+             IconImageSource="home.png">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="17,17,17,7">
                 <Label Text="Następna lekcja" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
-                <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                            HorizontalScrollBarVisibility="Default">
-                    <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="9" Margin="0,7,0,0" HasShadow="True">
-                        <StackLayout>
-                            <Label Text="Przedmiot   Kurs" FontSize="Title" TextColor="#FFFFFF"/>
-                            <Label Text="Nauczyciel" FontSize="Default" TextColor="#FFFFFF"/>
-                            <Label Text="Sala lekcyjna" FontSize="Default" TextColor="#FFFFFF"/>
-                        </StackLayout>
-                    </Frame>
-                </ScrollView>
+                <sadApp:LessonFrame Lesson="Przedmiot Kurs" Teacher="Nauczyciel" Classroom="Sala lekcyjna"/>
             </StackLayout>
             <StackLayout Margin="17,17,17,7">
                 <Label Text="Ostatnie oceny" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
-                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="9" Margin="0,7,0,0" HasShadow="True">
-                    <StackLayout>
-                        <Label Text="Nazwa Formy   uzysk/max" FontSize="Title" TextColor="#FFFFFF"/>
-                        <Label Text="Przedmiot   Kurs" FontSize="Default" TextColor="#FFFFFF"/>
-                    </StackLayout>
-                </Frame>
+                <sadApp:GradeFrame Lesson="Przedmiot Kurs" PointsGot="uzysk/max" FormName="Nazwa Formy"/>
             </StackLayout>
             <StackLayout Margin="17,17,17,7">
                 <Label Text="Formy w tym tygodniu" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
-                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="9" Margin="0,7,0,0" HasShadow="True">
-                    <StackLayout>
-                        <Label Text="Nazwa Formy" FontSize="Title" TextColor="#FFFFFF"/>
-                        <Label Text="Przedmiot   Kurs" FontSize="Default" TextColor="#FFFFFF"/>
-                        <Label Text="Ilość punktów do zdobycia" FontSize="Default" TextColor="#FFFFFF"/>
-                    </StackLayout>
-                </Frame>
+                <sadApp:FormFrame Lesson="Przedmiot Kurs" FormName="Nazwa Formy" PointsToGet="Max"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

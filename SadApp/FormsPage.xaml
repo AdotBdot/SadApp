@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.FormsPage"
-             Title="Formy" IconImageSource="image.png">
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.FormsPage" Title="Formy"
+             IconImageSource="image.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7" HasShadow="True">
-                <StackLayout>
-                    <Label Text="Formy" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="Some Text" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
+            <StackLayout Margin="17">
+                <Label Text="Formy" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
+                <sadApp:FormFrame Lesson="Lekcja 1" FormName="Forma 1" PointsToGet="100"/>
+                <sadApp:FormFrame Lesson="Lekcja 1" FormName="Forma 2" PointsToGet="100"/>
+                <sadApp:FormFrame Lesson="Lekcja 2" FormName="Forma 1" PointsToGet="100"/>
+                <sadApp:FormFrame Lesson="Lekcja 3" FormName="Forma 1" PointsToGet="100"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
