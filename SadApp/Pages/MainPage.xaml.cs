@@ -8,7 +8,9 @@ namespace SadApp
     {
         public MainPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            CurrentPage = Children[2];
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace SadApp
 {
@@ -7,6 +8,7 @@ namespace SadApp
         public App()
         {
             InitializeComponent();
+            NavigationPage page = new NavigationPage(new LoginPage());
 
             MainPage = new MainPage();
         }

@@ -1,6 +1,0 @@
-﻿namespace SadApp
-{
-    class SadApiM
-    {
-    }
-}
