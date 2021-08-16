@@ -1,22 +1,16 @@
 ﻿<?xml version="1.0"
       encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SadApp.GradesPage" Title="Oceny" IconImageSource="image.png">
+             xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.GradesPage" Title="Oceny"
+             IconImageSource="image.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,17,17,7" HasShadow="True">
-                <StackLayout>
-                    <Label Text="Lekcja 1" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="forma1: 69/2137" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="17,7,17,7" HasShadow="True">
-                <StackLayout>
-                    <Label Text="Lekcja 2" TextColor="#FFFFFF" FontSize="Title"/>
-                    <Label Text="forma1: 69/2137" TextColor="#FFFFFF"/>
-                    <Label Text="forma2: 69/2137" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
+        <StackLayout Margin="17">
+            <Label Text="Oceny" TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
+            <StackLayout Spacing="11">
+                <sadApp:LessonGrades Lesson="Lekcja 1" TextColor="Black" Background="{sadApp:Gradient}"/>
+                <sadApp:LessonGrades Lesson="Lekcja 2" TextColor="Black" Background="{sadApp:Gradient}"/>
+                <sadApp:LessonGrades Lesson="Lekcja 3" TextColor="Black" Background="{sadApp:Gradient}"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

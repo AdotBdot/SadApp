@@ -2,10 +2,9 @@
       encoding="utf-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.MainPage" BackgroundColor="#FFFFFF"
-            BarTextColor="#FFFFFF" BarBackgroundColor="{StaticResource Prim}" SelectedTabColor="{StaticResource Sec}"
-            android:TabbedPage.ToolbarPlacement="Bottom">
-    <!--Pages can be added as references or inline-->
+            xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.MainPage"
+            android:TabbedPage.ToolbarPlacement="Bottom" BackgroundColor="White" BarTextColor="White"
+            SelectedTabColor="{StaticResource Ter}" BarBackgroundColor="{StaticResource Prim}">
     <sadApp:AboutPage/>
     <sadApp:GradesPage/>
     <sadApp:HomePage/>

@@ -3,18 +3,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SadApp.AboutPage" Title="Ustawienia" IconImageSource="image.png">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Margin="17,17,17,7">
+        <StackLayout Margin="17" Spacing="11">
+            <StackLayout>
                 <Label Text="Ustawienia" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
-                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="0,7,0,0" HasShadow="True">
+                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="9" Margin="0,7,0,0" HasShadow="True">
                     <StackLayout>
                         <Label Text="Some Text" TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
-            <StackLayout Margin="17,17,17,7">
+            <StackLayout>
                 <Label Text="Informacje" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
-                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="13" Margin="0,7,0,0" HasShadow="True">
+                <Frame BackgroundColor="{StaticResource Prim}" CornerRadius="9" Margin="0,7,0,0" HasShadow="True">
                     <StackLayout>
                         <Label Text="Some Text" TextColor="#FFFFFF"/>
                     </StackLayout>
