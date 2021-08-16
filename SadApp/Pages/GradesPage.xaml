@@ -4,12 +4,12 @@
              xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.GradesPage" Title="Oceny"
              IconImageSource="image.png">
     <ContentPage.Content>
-        <StackLayout Margin="17">
+        <StackLayout Padding="17">
             <Label Text="Oceny" TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
             <StackLayout Spacing="11">
-                <sadApp:LessonGrades Lesson="Lekcja 1" TextColor="Black" Background="{sadApp:Gradient}"/>
-                <sadApp:LessonGrades Lesson="Lekcja 2" TextColor="Black" Background="{sadApp:Gradient}"/>
-                <sadApp:LessonGrades Lesson="Lekcja 3" TextColor="Black" Background="{sadApp:Gradient}"/>
+                <sadApp:LessonGrades TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+                <sadApp:LessonGrades TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+                <sadApp:LessonGrades TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

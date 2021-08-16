@@ -53,27 +53,30 @@ namespace SadApp
 
         public Form()
         {
-            CornerRadius = new CornerRadius(9f, 9f, 9f, 9f);
+            CornerRadius = new CornerRadius(9);
+            Padding = new Thickness(9);
+            Shadow = new DropShadow()
+            {
+                Opacity = 1,
+                Offset = new Point(9, 9)
+            };
 
             _FormNameLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                Text = "Nazwa formy"
             };
-
             _LessonLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Lekcja"
             };
-
             _PointsToGetLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Max punktów do zdobycia"
             };
-
-            _FormNameLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _LessonLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _PointsToGetLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
 
             Content = new StackLayout()
             {
@@ -112,42 +115,45 @@ namespace SadApp
         }
     }
 
-    public class GradeFrame : PancakeView
+    public class Grade : PancakeView
     {
         private Label _FormNameLabel;
-        private Label _PointsGotLabel;
+        private Label _PointsLabel;
         private Label _LessonLabel;
 
-        public GradeFrame()
+        public Grade()
         {
             CornerRadius = new CornerRadius(9);
+            Padding = new Thickness(9);
+            Shadow = new DropShadow()
+            {
+                Opacity = 1,
+                Offset = new Point(9, 9)
+            };
 
             _FormNameLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                Text = "Nazwa formy"
             };
-
             _LessonLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Lekcja"
             };
-
-            _PointsGotLabel = new Label()
+            _PointsLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Punkty Zdobyte/Max Punktów"
             };
-
-            _FormNameLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _LessonLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _PointsGotLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
 
             Content = new StackLayout()
             {
                 Children =
                 {
                     _FormNameLabel,
-                    _PointsGotLabel,
+                    _PointsLabel,
                     _LessonLabel
                 }
             };
@@ -158,9 +164,9 @@ namespace SadApp
             set => _FormNameLabel.Text = value;
         }
 
-        public string PointsGot
+        public string Points
         {
-            set => _PointsGotLabel.Text = value;
+            set => _PointsLabel.Text = value;
         }
 
         public string Lesson
@@ -173,41 +179,46 @@ namespace SadApp
             set
             {
                 _FormNameLabel.TextColor = value;
-                _PointsGotLabel.TextColor = value;
+                _PointsLabel.TextColor = value;
                 _LessonLabel.TextColor = value;
             }
         }
     }
 
-    public class LessonFrame : PancakeView
+    public class Lesson : PancakeView
     {
         private Label _LessonLabel;
         private Label _TeacherLabel;
         private Label _ClassroomLabel;
 
-        public LessonFrame()
+        public Lesson()
         {
             CornerRadius = new CornerRadius(9);
+            Padding = new Thickness(9);
+            Shadow = new DropShadow()
+            {
+                Opacity = 1,
+                Offset = new Point(9, 9)
+            };
 
             _LessonLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                Text = "Lekcja"
             };
 
             _TeacherLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Nauczyciel"
             };
 
             _ClassroomLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                Text = "Sala lekcyjna"
             };
-
-            _LessonLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _TeacherLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
-            _ClassroomLabel.SetAppThemeColor(Label.TextColorProperty, Color.White, Color.Black);
 
             Content = new StackLayout()
             {
@@ -220,7 +231,7 @@ namespace SadApp
             };
         }
 
-        public string Lesson
+        public string Name
         {
             set => _LessonLabel.Text = value;
         }
@@ -241,7 +252,7 @@ namespace SadApp
             {
                 _LessonLabel.TextColor = value;
                 _TeacherLabel.TextColor = value;
-                _LessonLabel.TextColor = value;
+                _ClassroomLabel.TextColor = value;
             }
         }
     }
@@ -253,11 +264,18 @@ namespace SadApp
         public LessonGrades()
         {
             CornerRadius = new CornerRadius(9);
+            Padding = new Thickness(9);
+            Shadow = new DropShadow()
+            {
+                Opacity = 1,
+                Offset = new Point(9, 9)
+            };
 
             _LessonLabel = new Label()
             {
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                Text = "Lekcja"
             };
 
             Content = new StackLayout()

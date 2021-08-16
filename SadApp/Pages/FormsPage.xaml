@@ -4,13 +4,13 @@
              xmlns:sadApp="clr-namespace:SadApp;assembly=SadApp" x:Class="SadApp.FormsPage" Title="Formy"
              IconImageSource="image.png">
     <ContentPage.Content>
-        <StackLayout Margin="17">
+        <StackLayout Padding="17">
             <Label Text="Formy" TextColor="#000000" FontSize="Title" FontAttributes="Bold"/>
             <StackLayout Spacing="11">
-                <sadApp:Form Lesson="Lekcja 1" FormName="Forma 1" PointsToGet="100" Background="{sadApp:Gradient}"/>
-                <sadApp:Form Lesson="Lekcja 1" FormName="Forma 2" PointsToGet="100" Background="{sadApp:Gradient}"/>
-                <sadApp:Form Lesson="Lekcja 2" FormName="Forma 1" PointsToGet="100" Background="{sadApp:Gradient}"/>
-                <sadApp:Form Lesson="Lekcja 3" FormName="Forma 1" PointsToGet="100" Background="{sadApp:Gradient}"/>
+                <sadApp:Form TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+                <sadApp:Form TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+                <sadApp:Form TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+                <sadApp:Form TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

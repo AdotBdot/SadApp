@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SadApp;assembly=SadApp"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="SadApp.HomePage" Title="Główna" IconImageSource="home.png">
+    <ContentPage.Content>
+        <StackLayout Padding="17" Spacing="17">
+            <StackLayout>
+                <Label Text="Następna lekcja" TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
+                <local:Lesson TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Ostatnie oceny" TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
+                <local:Grade TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Formy w tym tygodniu" TextColor="Black" FontSize="Title" FontAttributes="Bold"/>
+                <local:Form TextColor="Black" BackgroundColor="{StaticResource Prim}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
